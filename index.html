@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Jogos</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="./assets/playStationLogo.png" alt="Logo Playstation Store">
+    <nav>
+      <ul>
+        <li><a href="#news">Novidades</a></li>
+        <li><a href="#onSale">Ofertas</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#subscriptions">Newsletter</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="news">
+    <img src="./assets/games.jpg" alt="Capa de Novidades">
+  </section>
+  <main id="onSale">
+    <aside>
+      <h2>Informações Adicionais</h2>
+      <p>Este é o espaço para informações adicionais sobre o catálogo de jogos, promoções, notícias, etc.</p>
+    </aside>
+    <div class="articleContainer" >
+      <h1>Ofertas</h1>
+<!-- Galeria dos jogos -->
+      <article>
+        <figure>
+          <img src="./assets/starWarsJedi.webp" alt="Imagem do Jogo 1">
+          <figcaption>STAR WARS Jedi: Survivor</figcaption>
+        </figure>
+        <div class="tag">-35%</div>
+        <div class="price">
+          <span>R$ 200,28</span>
+          <span class="oldPrice">R$ 338,90</span>
+        </div>
+      </article>
+      <article>
+        <figure>
+          <img src="./assets/gta5.webp" alt="Imagem do Jogo 1">
+          <figcaption>Grand Theft Auto IV</figcaption>
+        </figure>
+        <div class="tag">-33%</div>
+        <div class="price">
+          <span>R$ 107,13</span>
+          <span class="oldPrice">R$ 159,00</span>
+        </div>
+      </article>
+      <article>
+        <figure>
+          <img src="./assets/legoStarWars.webp" alt="Lego Star Wars: A saga skywalker">
+          <figcaption>Lego Star Wars</figcaption>
+        </figure>
+        <div class="tag">-67%</div>
+        <div class="price">
+          <span>R$ 75,89</span>
+          <span class="oldPrice">R$ 229,99</span>
+        </div>
+      </article>
+      <article>
+        <figure>
+          <img src="./assets/dragonBall.webp" alt="Dragon Ball Z: Kakarot">
+          <figcaption>Dragon Ball Z: Kakarot</figcaption>
+        </figure>
+        <div class="tag">-75%</div>
+        <div class="price">
+          <span>R$ 74,97</span>
+          <span class="oldPrice">R$ 299,90</span>
+        </div>
+      </article>
+      <article>
+        <figure>
+          <img src="./assets/civilization.jpeg" alt="Sid Meier`s Civilization VI">
+          <figcaption>Descrição do Jogo 1</figcaption>
+        </figure>
+        <div class="tag">-80%</div>
+        <div class="price">
+          <span>R$ 29,90</span>
+          <span class="oldPrice">R$ 149,50</span>
+        </div>
+      </article>
+      <article>
+        <figure>
+          <img src="./assets/turtle.webp" alt="Teenage Mutant Ninja Turtles">
+          <figcaption>Teenage Mutant Ninja Turtles</figcaption>
+        </figure>
+        <div class="tag">-30%</div>
+        <div class="price">
+          <span>R$ 87,15</span>
+          <span class="oldPrice">R$ 124,50</span>
+        </div>
+      </article>
+<!-- FIM DA GALERIA -->  
+    </div>
+  </main>
+  <section id="about">
+    <article>
+      <h2 class="sectionTitle">Sobre Nós</h2>
+        <p>Bem-vindo ao nosso catálogo de jogos! Somos apaixonados por jogos e acreditamos que eles têm o poder de nos levar a aventuras emocionantes, mundos fantásticos e desafios empolgantes. Nosso objetivo é compartilhar essa paixão com você, oferecendo uma coleção cuidadosamente selecionada dos melhores jogos disponíveis.</p>
+        <p>Em nosso catálogo, você encontrará uma ampla variedade de jogos, desde títulos clássicos até lançamentos mais recentes. Nossa equipe de especialistas se esforça para manter nossas listagens atualizadas e informativas, fornecendo detalhes sobre jogabilidade, enredo, gráficos e muito mais.</p>
+    
+        <h3>Nossa Missão</h3>
+        <p>Nossa missão é criar um espaço onde os entusiastas de jogos possam explorar, descobrir e escolher os jogos que mais os empolguem. Queremos fornecer informações detalhadas, análises honestas e opiniões confiáveis para ajudá-lo a fazer escolhas informadas e aproveitar ao máximo sua experiência de jogo.</p>
+
+        <h3>Nosso Compromisso</h3>
+        <p>Estamos comprometidos em fornecer informações precisas e imparciais para ajudar você a encontrar os jogos que mais se adequam ao seu gosto. Valorizamos a diversidade e procuramos incluir uma ampla gama de gêneros e plataformas para atender a todas as preferências.</p>
+
+    </article>
+  </section>
+  <section id="subscriptions">
+    <form action="#" method="post">
+      <h2 class="sectionTitle">Assine nossa Newsletter</h2>
+      <p>Receba as últimas notícias e atualizações diretamente na sua caixa de entrada.</p>
+    
+      <label>Nome:
+        <input type="text" id="nome" name="nome" required>
+      </label>
+    
+      <label>E-mail:
+        <input type="email" id="email" name="email" required>
+      </label>
+    
+      <label for="concordo-email" class="estilizado">
+        <input type="checkbox" id="concordo-email" name="concordo-email" value="sim" required>
+        <span>Sim, desejo receber e-mails com as últimas notícias e atualizações.</span>
+      </label>
+    
+      <button type="submit">Assinar</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2023 Catálogo de Jogos</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
